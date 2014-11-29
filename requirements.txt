@@ -1,2 +1,3 @@
 wafer
+psycopg2
 mdx_outline
