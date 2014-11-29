@@ -1,0 +1,243 @@
+html, body {
+}
+
+body {
+	font-size: 16px;
+}
+
+#wrap {
+  min-height: 100%;
+  /* put the background behind the clouds -- see CLOUDS further down */
+  background: url('../img/clouds_bottom.png'), url('../img/clouds_top.png'), url('../img/pattern.jpg'), #fff;
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  background-position: bottom center, top center, 0 0, 0 0;
+}
+
+#main {
+  color: white;
+  padding-top: 1em;
+}
+
+#main .popover-content, #main .popover-title {
+  color: black;
+}
+
+#main .form-actions {
+  background: inherit;
+  border: none;
+  padding: 0px;
+}
+
+#main .well {
+  color: black;
+}
+
+#main .well:after {
+  /* ensure wells contain all their floating content */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main h1 {
+    margin: 0;
+    padding: 0 24px;
+    line-height: 47px;
+    background: #1a1f29;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fed43c;
+    text-transform: uppercase;
+}
+
+#main section {
+    width: 100%;
+    float: left;
+    padding: 0 10px 10px 10px;
+    color: black;
+    background: #fff;
+    margin-bottom: 1em;
+    background: white;
+}
+
+#main section section {
+    background: #eee;
+}
+
+#main section h1, #main section section h2 {
+    margin: 10px 0 0;
+    padding: 0 24px;
+    line-height: 47px;
+    background: #1a1f29;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fed43c;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+#main section p {
+    padding-left: 12px;
+}
+
+#main li p {
+    padding-left: 0;
+}
+
+#main table {
+    width: 100%;
+}
+
+#main table tr {
+    border-bottom: 2px solid #fff;
+}
+
+#main table th, table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-right: 2px solid #fff;
+    background: #dfe6ec;
+    font-size: 16px;
+    color: #666;
+}
+
+#main table td.title { background: #cc6714; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
+#main table th { background: #fed43c; color: #181f29; font-weight: normal; vertical-align: top; }
+#main table th span { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: bold; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
+
+#logos {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#logos img {
+  padding: 10px 20px;
+}
+
+#legal {
+  text-align: center;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 30px;
+  color: #cc6714;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+#credits {
+  text-align: center;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+#credits a {
+	color: #fed43c;
+}
+
+/* Schedule highlight colours:
+   Blue-ish: #BDD6EC
+   Pink-ish: #EBBDEC
+   Redbrown-ish: #ECD3BD
+   Green-ish: #BFECBD
+ */
+/* Highlights */
+#main table td.schedule-break { background: #BDD6EC; }
+#main table td.schedule-keynote { background: #EBBDEC; }
+/* Use a darker background for unavailable venues in the schedule */
+#main table td.unavailable { background: #444444; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
+
+
+#logo_bottom {
+  /* this padding needs to be big enough to avoid clouds_bottom.png covering text. */
+  padding-bottom: 199px;
+  text-align: center;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  background: #000;
+  color: white;
+  width: 100%;
+  clear: both;
+  padding: 10px 0px;
+  text-align: center;
+  z-index: 100;
+}
+
+.wafer.list div:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.wafer.list div:nth-child(2n + 1) {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+/* fix icons on top nav bar */
+ul.nav li.icon a {
+  padding: 6px;
+}
+
+/* override buttons */
+.btn-primary {
+    background-color: #cc6714;
+    background-image: linear-gradient(to bottom, #cc6714, #cc6714);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    background-color: #cc6714;
+    color: #FFFFFF;
+}
+
+a { color: #cc6714; }
+a:hover, a:focus { color: #cc6714; }
+
+/* NAV */
+
+.navbar-inverse .navbar-brand, .navbar-inverse .nav > li > a { color: #fff; text-transform: uppercase; font-size: 18px; font-family: 'Oswald',sans-serif; }
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .nav > li > a:hover, .navbar-inverse .navbar-brand:focus, .navbar-inverse .nav > li > a:focus { color: #fed43c; }
+.navbar .nav > li > a { padding: 10px 13px; }
+.navbar .navbar-brand { padding: 10px 15px; }
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret { display: none; }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a { color: #181f29; background-color: #fed43c; background-image: linear-gradient(to bottom, #fed43c, #fed43c); }
+
+.container-fluid{
+    padding-top: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.pull-right {
+    margin: 0;
+}
+
+.profile-links {
+    padding: 6px;
+}
+
+@media only screen and (max-device-width: 768px){
+    #footer {
+        position: static;
+    }
+
+    .mobile-center{
+        text-align: center;
+    }
+
+}
