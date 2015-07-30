@@ -77,6 +77,7 @@ MARKITUP_FILTER = ('markdown.markdown', {
         'outline',
         'attr_list',
         'attr_cols',
+        'markdown.extensions.tables',
     ],
 })
 # Use HTTPS jquery URL so it's accessible on HTTPS pages (e.g. editing a talk)
