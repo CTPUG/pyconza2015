@@ -33,6 +33,8 @@ WAFER_MENUS += (
      "items": [
          {"name": "praekelt", "label": _(u"» Praekelt ★"),
           "url": reverse_lazy("wafer_sponsor", args=(2,))},
+         {"name": "takealot", "label": _(u"» Takealot ★"),
+          "url": reverse_lazy("wafer_sponsor", args=(4,))},
          {"name": "oracle", "label": _(u"» Oracle ★"),
           "url": reverse_lazy("wafer_sponsor", args=(1,))},
          {"name": "psf", "label": _(u"PSF"),
