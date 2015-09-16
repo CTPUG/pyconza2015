@@ -39,6 +39,8 @@ WAFER_MENUS += (
           "url": reverse_lazy("wafer_sponsor", args=(1,))},
          {"name": "psf", "label": _(u"PSF"),
           "url": reverse_lazy("wafer_sponsor", args=(3,))},
+         {"name": "bbd", "label": _(u"BBD"),
+          "url": reverse_lazy("wafer_sponsor", args=(6,))},
          {"name": "sungard", "label": _(u"SunGard"),
           "url": reverse_lazy("wafer_sponsor", args=(5,))},
          {"name": "sponsors", "label": _("Our sponsors"),
