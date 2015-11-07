@@ -54,10 +54,10 @@ WAFER_MENUS += (
      "items": [
          {"name": "schedule", "label": _("Schedule"),
           "url": reverse_lazy("wafer_full_schedule")},
-         {"name": "schedule-next-up", "label": _("Next up"),
-          # Fixed day
-          # "url": "/schedule/current/?day=2015-10-01&time=08:30"},
-          "url": reverse_lazy("wafer_current")},
+         #{"name": "schedule-next-up", "label": _("Next up"),
+         # # Fixed day
+         # # "url": "/schedule/current/?day=2015-10-01&time=08:30"},
+         # "url": reverse_lazy("wafer_current")},
          {"name": "accepted-talks", "label": _("Accepted Talks"),
           "url": reverse_lazy("wafer_users_talks")},
         ]},
