@@ -63,8 +63,6 @@ WAFER_MENUS += (
         ]},
     {"menu": "events", "label": _("News"),
      "items": []},
-    {"menu": "archived", "label": _("Archived Details"),
-     "items": []},
     {"menu": "previous-pycons", "label": _("Past PyConZAs"),
      "items": [
          {"name": "pyconza2012", "label": _("PyConZA 2012"),
